@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bus.mapper.GradeMapper">
+    <resultMap id="BaseResultMap" type="com.bus.entity.Grade">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="grade_id" property="gradeId" jdbcType="INTEGER"/>
+        <result column="grade" property="grade" jdbcType="INTEGER"/>
+        <result column="grade_sum" property="gradeSum" jdbcType="INTEGER"/>
+        <result column="admin_id" property="adminId" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <select id="getMax" parameterType="int" resultType="int" >
+        SELECT MAX(grade_sum)
+        from grade
+        where admin_id =#{id};
+    </select>
+
+
+</mapper>
