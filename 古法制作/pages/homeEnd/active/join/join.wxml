@@ -1,0 +1,18 @@
+<view>
+    <form bindsubmit="chooseImage">
+        <view class="demo" bindlongpress="uploadPhoto">
+            <view wx:if="{{home_photo==0}}" class="tip">请长按此处选择图片</view>
+            <image src="{{home_photo}}" mode="aspectFit"></image>
+        </view>
+        <view class="demo" bindlongpress="chooseVideo">
+            <view wx:if="{{video==0}}" class="tip">请长按此处选择视频</view>
+            <video src="{{video}}" wx:if="{{video!=0}}"></video>
+        </view>
+        <view class="demo">
+            <textarea name="text" placeholder="描述内容" ></textarea>
+        </view>
+
+            <button formType="submit" type="primary" class="demo1">发布</button>
+
+    </form>
+</view>

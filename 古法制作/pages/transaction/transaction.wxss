@@ -1,0 +1,27 @@
+/* pages/transaction/transaction.wxss */
+.demo{
+    width: 600rpx;
+    height: 400rpx;
+    margin-top: 15rpx;
+    margin-left: 80rpx;
+    border: black 1rpx solid;
+}
+.demo image{
+    width: 600rpx;
+    height: 400rpx;
+}
+.demo video{
+    width: 600rpx;
+    height: 400rpx;
+}
+.tip{
+    width: 160rpx;
+    text-align: center;
+    margin-left: 220rpx;
+    margin-top: 150rpx;
+}
+.demo1{
+    margin-top: 15rpx;
+    margin-left: 80rpx;
+    border: black 1rpx solid;
+}

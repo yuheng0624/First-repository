@@ -1,0 +1,76 @@
+{
+    "pages": [
+        "pages/me/me",
+        "pages/fabu/fabu",
+        "pages/home/home",
+        "pages/percen/percen",
+        "pages/load/load",
+        "pages/index/index",
+        "pages/order/order",
+        "pages/management/management",
+        "pages/sousuo/sousuo",
+        "pages/login/login",
+        "pages/logs/logs",
+        "pages/zufang/zufang",
+        "pages/video/video",
+        "pages/transaction/transaction",
+        "pages/user_information/user_information",
+        "pages/user_tousu/user_tousu",
+        "pages/management/userInformation/userInformation",
+        "pages/management/user_tosu/user_tosu",
+        "pages/management/user_baoxiui/user_baoxiui",
+        "pages/management/user_wuye/user_wuye",
+        "pages/management/user_stall/user_stall",
+        "pages/management/userInformation/Detailed_information/Detailed_information",
+        "pages/management/userInformation/add_user_information/add_user_informatin",
+        "pages/management/user_tosu/writ_tousu/writ_tousu",
+        "pages/management/user_baoxiui/writ_baoxiu/writ_baoxiu",
+        "pages/management/user_stall/writ_stall/writ_stall",
+        "pages/management/writ_wuyefei/writ_wuyefei",
+        "pages/homeEnd/homeEnd",
+        "pages/homeEnd/active/active",
+        "pages/homeEnd/active/join/join"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "icon/shouyefill.png",
+                "selectedIconPath": "icon/shouyefill_1.png"
+            },
+            {
+                "pagePath": "pages/sousuo/sousuo",
+                "text": "搜索",
+                "iconPath": "icon/sousuo.png",
+                "selectedIconPath": "icon/sousuo_1.png"
+            },
+            {
+                "pagePath": "pages/transaction/transaction",
+                "text": "交易",
+                "iconPath": "icon/jiaoyijilu.png",
+                "selectedIconPath": "icon/jiaoyisuo.png"
+            },
+            {
+                "pagePath": "pages/management/management",
+                "text": "管理",
+                "iconPath": "icon/yingyongguanli.png",
+                "selectedIconPath": "icon/yunyingguanli.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "个人中心",
+                "iconPath": "icon/gerenzhongxin.png",
+                "selectedIconPath": "icon/icon03.png"
+            }
+        ]
+    }
+}
