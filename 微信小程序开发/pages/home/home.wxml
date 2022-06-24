@@ -1,0 +1,9 @@
+<view class="box" wx:for="{{area}}" wx:key="index">
+    <image src="{{imgs[index]}}"></image>
+    <view class="left">
+        <view class="title">{{title[index]}}</view>
+        <view class="content">{{content[index]}}</view>
+        <view class="area">{{area[index]}}</view>
+    </view>
+</view>
+<button bindtap="jumpage6"> 退出</button>

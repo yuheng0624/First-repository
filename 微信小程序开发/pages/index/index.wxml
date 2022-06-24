@@ -1,0 +1,129 @@
+<swiper class="banners" indicator-dots autoplay indicator-active-color="#d43c33" indicator-color="ivory">
+   <swiper-item wx:for="{{imgUrl}}" wx:key="bannerId">
+      <image mode="widthFix" src="{{item}}" />
+   </swiper-item>
+</swiper>
+<view style="display: flex; ">
+
+      <view class="e">推荐</view>
+
+
+   <navigator open-type="navigate" url="../fenlei/fenlei">
+      <view class="e">分类</view>
+   </navigator>
+
+   <navigator open-type="navigate" url="../active/active">
+      <view class="e">活动</view>
+   </navigator>
+
+</view>
+
+<view class="menu">
+
+   <view bindtap="bindfenlei" class="menu-item" data-video="{{class1[0]}}">
+      <image src="/icon/dianying.png" mode="widthFix" class="menu-img"> </image>
+      <view class="menu-name" >
+         {{url[0].active_name}}
+      </view>
+      
+   </view>
+
+
+   <view bindtap="bindfenlei" class="menu-item" data-video="{{class1[1]}}">
+      <image src="/icon/kandianying.png" mode="widthFix" class="menu-img"> </image>
+      <view class="menu-name">
+         {{url[1].active_name}}
+      </view>
+   </view>
+
+   <view bindtap="bindfenlei" class="menu-item" data-video="{{class1[2]}}">
+      <image src="/icon/weidianying.png" mode="widthFix" class="menu-img"> </image>
+      <view class="menu-name">
+         {{url[2].active_name}}
+      </view>
+   </view>
+</view>
+
+
+<view class="menu">
+
+   <view class="menu-item" data-video="{{class1[3]}}" bindtap="bindfenlei">
+      <image src="/icon/douyin.png" mode="widthFix" class="menu-img"> </image>
+      <view class="menu-name">
+         {{url[3].active_name}}
+      </view>
+   </view>
+
+
+   <navigator open-type="navigate" url="../zufang/zufang" class="menu-item">
+      <image src="/icon/shejiaotubiao-02.png" mode="widthFix" class="menu-img"> </image>
+      <view class="menu-name">
+         朋友圈视频
+      </view>
+   </navigator>
+
+
+   <navigator open-type="navigate" url="../zufang/zufang" class="menu-item">
+      <image src="/icon/gengduo.png" mode="widthFix" class="menu-img"> </image>
+      <view class="menu-name" bindtap="buttonTap">
+         更多
+      </view>
+      <modal title="暂无更多应用" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+      </modal>
+   </navigator>
+</view>
+<view class="divLine"></view>
+
+<!-- 第三部分 -->
+
+<scroll-view scroll-y="ture" style="height: 720rpx; width: 100%;">
+   <view class="a" wx:for="{{url}}" bindtap="bind" data-video="{{class[index]}}">
+      <view class="b">
+         <view >
+            <image src="{{url[index].home_photo}}" mode="widthFix" class="image1"> </image>
+         </view>
+      </view>
+      <view class="item">
+         <view class="title">{{url[index].active_name}}</view>
+         <view class="info">{{url[index].videoClass}}</view>
+         <view class="highlight">点击量：{{url[index].number}}</view>
+      </view>
+   </view>
+
+   <!-- <view class="a">
+      <view class="b">
+         <image src="https://img0.baidu.com/it/u=3993224496,2320767577&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=400" mode="widthFix" class="image1"> </image>
+      </view>
+      <view class="item">
+         <view class="title">豪华水景别墅 ||蓝色遐想系列</view>
+         <view class="info"> 景城院公寓 岳麓区</view>
+         <view class="highlight">地址：湖南省长沙市岳麓区</view>
+
+      </view>
+   </view>
+
+   <view class="a">
+      <view class="b">
+         <image src="https://img2.baidu.com/it/u=235452408,218922831&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=375" mode="widthFix" class="image1"> </image>
+      </view>
+      <view class="item">
+         <view class="title">现代化城市别墅xxxxxxxxxx</view>
+         <view class="info">才子城公寓 雨花区</view>
+         <view class="highlight">地址：湖南省长沙市雨花区</view>
+
+      </view>
+   </view>
+
+   <view class="a">
+      <view class="b">
+         <image src="https://img2.baidu.com/it/u=235452408,218922831&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=375" mode="widthFix" class="image1"> </image>
+      </view>
+      <view class="item">
+         <view class="title">现代化城市别墅xxxxxxxxxxx</view>
+         <view class="info">才子城公寓 雨花区</view>
+         <view class="highlight">地址：湖南省长沙市雨花区</view>
+
+      </view>
+   </view> -->
+
+</scroll-view>

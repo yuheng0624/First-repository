@@ -1,0 +1,10 @@
+.a{
+    text-align: center;
+}
+.b{
+    width: 40%;
+}
+
+.c{
+    margin-left: 300rpx;
+}

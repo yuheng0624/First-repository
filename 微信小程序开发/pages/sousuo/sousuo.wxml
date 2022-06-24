@@ -1,0 +1,13 @@
+<view class="top">
+  <view class="topsearch">
+    <view class="frame">
+      <input value="{{shoopingtext}}" bindinput="search"></input>
+    </view>
+    <text bindtap="search1">搜索</text>
+  </view>
+</view>
+<view wx:for="{{hot}}" class="ac">
+<view>{{hot[index].active_name}}</view>
+<view>{{hot[index].text}}</view>
+  <video src="{{hot[index].video}}"></video>
+</view>

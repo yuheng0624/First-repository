@@ -1,0 +1,41 @@
+.box{
+    display: flex;
+    height: 300rpx;
+    width: 90%;
+    border: solid 2rpx #999999;
+    margin:5rpx 2%;
+    padding: 5rpx 3%;
+    border-radius: 40rpx;
+}
+.box image{
+    height: 100%;
+    width: 30%;
+    margin-right: 5rpx;
+}
+.box .left{
+    width: 70%;
+}
+.box .left .title{
+    font-size: 50rpx;
+    height: 25%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow: hidden;
+}
+.box .left .content{
+    font-size: 35rpx;
+    height: 55%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow: hidden;
+}
+.box .left .area{
+    font-size: 30rpx;
+    height: 15%;
+}

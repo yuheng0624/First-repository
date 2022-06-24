@@ -1,0 +1,93 @@
+<!--未登录-->
+<view class="load" wx:if="{{!loginOk}}">
+  <image src="/pages/pic/boy.jpg" bindtap="getUserProfile"></image>
+  <text class="clickload" bindtap="getUserProfile">点击登录</text>
+</view>
+<!--已登录-->
+<view wx:else>
+  <view class="load">
+    <image src="{{avatarUrl}}"></image>
+    <text class="clickload">{{nickName}}</text>
+  </view>
+  <button class="exit" bindtap="exit" type="primary" style="    margin-bottom: 20rpx;">退出登录</button>
+</view>
+
+<view class="list-item1">
+  <text style="width: 210rpx;">个性签名：</text> <input type="text" name="name" class="list-item1" />
+</view>
+<view class="px">
+  我的视频:
+  <view>
+    <view class="px">
+      <video wx:for="{{url}}" src="{{url[index].video}}">
+      </video>
+    </view>
+  </view>
+</view>
+<view class="list-item1">
+  我的收藏:
+</view>
+<view class="px">
+  <video wx:for="{{url}}" src="{{url[index].video}}" wx:if="{{url[index].collection}}"> 
+  </video>
+</view>
+
+<!-- <view class="view_2">
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="https://s2.loli.net/2022/06/17/nujkTfYGI1dmzWs.png"></image>
+      <text class="text_saoyisao">待付款</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="  https://s2.loli.net/2022/06/17/I9swxFqJdDCSefR.png "></image>
+      <text class="text_saoyisao">待发货</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src=" https://s2.loli.net/2022/06/17/zVPDkH5EKSJMGra.png"></image>
+      <text class="text_saoyisao">待收货</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image bindtap="jumpage5" class="image_tupian" src="https://s2.loli.net/2022/06/17/3Vev4bdTiPGCf7z.png "></image>
+      <text class="text_saoyisao">待评价</text>
+    </view>
+  </view>
+  <!-- 第三部分 -->
+<!-- <view class="view_3">
+    <view class="list-item">
+      <image class="item-image" src="https://img0.baidu.com/it/u=1281242878,4065367007&fm=253&fmt=auto&app=138&f=JPEG?w=516&h=500"></image>
+      <button class="item-text" style="margin-left: 100rpx; background-color: white;" open-type="share"  type="default" > 我的收藏</button>
+      <image class="image-jiantou" src="https://img2.baidu.com/it/u=174900382,1252304051&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <image class="item-image" src="https://img1.baidu.com/it/u=2092311334,1248564051&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+      <button class="item-text" style="margin-left: 100rpx; background-color: white;"   type="default" bindtap="jumpage6" > 我的评价</button>
+      <image class="image-jiantou" src="https://img2.baidu.com/it/u=174900382,1252304051&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <image class="item-image" src="https://img1.baidu.com/it/u=738984767,903008459&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+     <button class="item-text" style="margin-left: 100rpx; background-color: white;" bindtap='buttonTap' type="default" > 版本更新</button>
+     <modal title="此版本已为最新版本" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+    </modal>
+      <image class="image-jiantou" src="https://img2.baidu.com/it/u=174900382,1252304051&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <image class="item-image" src="https://img2.baidu.com/it/u=1104741342,1634329529&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+      <button class="item-text" style="margin-left: 100rpx; background-color: white;" open-type="share"  type="default" > 售后记录</button>
+      <image class="image-jiantou" src="https://img2.baidu.com/it/u=174900382,1252304051&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <image class="item-image" src="https://img2.baidu.com/it/u=4167056652,3857265287&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+      <button class="item-text" style="margin-left: 100rpx; background-color: white;" open-type="share"  type="default" > 分享邀请</button>
+      <image class="image-jiantou" src="https://img2.baidu.com/it/u=174900382,1252304051&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+    </view>
+    <view class="line"></view>
+    <view class="list-item">
+      <image class="item-image" src="https://s2.loli.net/2022/06/18/dDcFYHAzv5rmIqO.png"></image>
+      <button class="item-text" style="margin-left: 100rpx; background-color: white;" open-type="feedback"  type="default" > 信息反馈</button>
+      <image class="image-jiantou" src="https://img2.baidu.com/it/u=174900382,1252304051&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+    </view>
+    <view class="line"></view>
+  </view>  -->

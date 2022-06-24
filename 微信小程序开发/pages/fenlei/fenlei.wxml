@@ -1,0 +1,18 @@
+<view class="a" wx:if="{{hot!=0}}"> {{hot[0].active_name}}专区</view>
+<view class="b">
+<view wx:for="{{hot}}">
+    <video src="{{hot[index].video}}"></video>
+</view>
+</view>
+<view wx:if="{{hot1!=0}}">
+<view class="a" >
+分类专区
+</view>
+<view class="b" wx:for="{{hot1}}">
+    <scroll-view>
+    <view>{{hot1[index].videoClass}}</view>
+    <video  src="{{hot1[index].video}}"></video>
+    </scroll-view>
+    
+</view>
+</view>

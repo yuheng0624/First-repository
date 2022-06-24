@@ -1,0 +1,10 @@
+<view class="box">
+    <view class="container" bindtap="goInfo" data-id="{{class[index]}}" wx:for="{{video}}">
+    <view class="img">
+      <image src="{{video[index].home_photo}}" ></image> 
+    </view>
+    <view class="decoration">
+      <text>{{video[index].text}}</text>
+    </view>
+</view>
+</view>
