@@ -1,0 +1,50 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/active/active",
+        "pages/fabu/fabu",
+        "pages/home/home",
+        "pages/sousuo/sousuo",
+        "pages/me/me",
+        "pages/video/video",
+        "pages/fenlei/fenlei",
+        "pages/logs/logs",
+        "pages/active/action/action"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "icon/shouye.png",
+                "selectedIconPath": "icon/shouye_1.png"
+            },
+            {
+                "pagePath": "pages/sousuo/sousuo",
+                "text": "搜索",
+                "iconPath": "icon/sousuo.png",
+                "selectedIconPath": "icon/sousuoremensousuo.png"
+            },
+            {
+                "pagePath": "pages/fabu/fabu",
+                "text": "发布",
+                "iconPath": "icon/fabu.png",
+                "selectedIconPath": "icon/icon_fabu.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "我的",
+                "iconPath": "icon/gerenzhongxin.png",
+                "selectedIconPath": "icon/user.png"
+            }
+        ]
+    }
+}

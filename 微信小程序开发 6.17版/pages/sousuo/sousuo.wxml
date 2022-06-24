@@ -1,0 +1,50 @@
+<view class="top">
+  <view class="topsearch">
+    <view class="frame">
+      <input value="{{shoopingtext}}" bindinput="shoppinginput"></input>
+    </view>
+    <text bindtap="search">搜索</text>
+  </view>
+</view>
+
+<view class="history" wx:if="{{history}}">
+  <view class="history_title">
+    <text>历史搜索</text>
+    <image src="https://img0.baidu.com/it/u=1761886174,1342370616&fm=253&fmt=auto&app=138&f=JPEG?w=443&h=500" mode="widthFix" style="width:5%;" bindtap="cleanhistory"></image>
+  </view>
+  <view class="history_text">
+    <text wx:for="{{newArray}}" wx:key="key" data-text="{{item}}" bindtap="textfz">{{item}}</text>
+  </view>
+</view>
+
+<view class="none" wx:if="{{noneview}}">
+  <image src="https://s2.loli.net/2022/06/22/tvgF6xdhqZNLpkR.png" mode="widthFix" style="width:20%"></image>
+  <text>抱歉，没有相关商品</text>
+</view>
+<view class='swiper_con' wx:if="{{shoppinglist}}">
+  <view class='swiper_con_view' wx:for="{{shoopingarray}}" wx:key="id" wx:if='{{item.status=="1"?true:false}}'>
+    <image src="{{item.images}}" mode="widthFix" style="width:200%" data-status="{{item.status}}"></image>
+    <view style="width:200%;margin:5%;">
+      <text style="font-size:30rpx">{{item.title}}</text>
+      <!-- <view class="swiper_con_view_view"> -->
+        <view style="width:200% ;">
+          <text style="font-size:30rpx;color:red;">￥{{item.money}}</text>
+          <view style="font-size:30rpx;color:#B8B8B8;">已出售{{item.sold}} </view>
+ </view  >
+ 
+<view style="  display: flex;" class="b">
+  <view bindtap="haveSave" style="display: flex;"  >
+    <image style="width:50rpx;" mode="widthFix" src="{{isClick?'https://s2.loli.net/2022/06/18/tTGR2XyVvDm8cge.png':'https://s2.loli.net/2022/06/18/tTGR2XyVvDm8cge.png'}}" ></image>
+    <text style="width: 200rpx;"  >{{isClick?'取消':'收藏        '}}</text>
+</view>
+
+<view bindtap="haveSave2"  class="a"  style="display: flex;" >
+    <image style="width:50rpx;" mode="widthFix"  src="{{isClick?'https://s2.loli.net/2022/06/22/zCEtMYVjQAorbLm.png':'https://s2.loli.net/2022/06/22/zCEtMYVjQAorbLm.png'}}"  ></image>
+    <text style="width: 200rpx;" >{{isClick?'取消':'点赞       '}}</text>
+</view>
+
+    </view>
+      <!-- </view> -->
+    </view>
+  </view>
+</view>

@@ -1,0 +1,85 @@
+page {
+    background-color: rgb(238, 240, 244);
+  }
+  
+  .heart {
+    margin: 10rpx 20rpx;
+  }
+  
+  .header {
+    height: 420rpx;
+    width: 100%;
+  }
+  
+  .header image {
+      width: 100%;
+    height: 420rpx;
+  }
+  
+  .banner {
+    background-color: #fff;
+    border-radius: 10rpx;
+  }
+  
+  .banner .title {
+    padding: 10rpx 20rpx;
+    font-weight: 900;
+  }
+  
+  .banner .info {
+    padding: 10rpx 20rpx;
+    font-size: 24rpx;
+  }
+  
+  .decoration {
+    height: 240rpx;
+    background-color: #fff;
+    padding: 10rpx 20rpx;
+    border-radius: 10rpx;
+    font-size: 29rpx;
+    color: #666666;
+    /* text-align: right; */
+    overflow: scroll;
+    text-overflow: clip;
+    white-space: wrap;
+  }
+  
+  .piece {
+    background-color: #fff;
+    border-radius: 10rpx;
+    /* height: 400rpx; */
+  }
+  
+  .piece .tuijian {
+    margin: 10rpx 0rpx 10rpx 20rpx;
+  }
+  
+  .piece .box {
+    padding: 10rpx 0rpx;
+    font-size: 25rpx;
+  }
+  
+  .piece .box .container {
+    width: 355rpx;
+    height: 300rpx;
+    background-color: white;
+    margin: 10rpx 10rpx;
+    border-radius: 15rpx;
+  }
+  
+  .piece .box .container .img{
+    width: 355rpx;
+    height: 220rpx;
+  }
+  .piece .box .container .img image {
+    width: 100%;
+    height: 220rpx;
+    /* border-top-left-radius: 15rpx;
+    border-top-right-radius: 15rpx; */
+    border-radius: 15rpx
+  }
+  
+  .piece .box .container .decoration {
+    height: 80rpx;
+  }
+  

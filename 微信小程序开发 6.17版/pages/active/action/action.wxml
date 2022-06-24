@@ -1,0 +1,35 @@
+<!--pages/actInfo/actInfo.wxml-->
+<view class="header">
+  <image src="{{hot[0].active_photo}}" mode="aspectFill"></image>
+</view>
+
+<view class="banner heart">
+  <view class="title">
+    <text>{{ids}}制作视频大赛</text>
+  </view>
+  <view class="info">
+  <view>已报名：{{joinNumber}}人</view>  
+  </view>
+</view>
+
+<view class="decoration heart">
+  <text>{{hot[0].introduce}}</text>
+</view>
+
+<view class="piece heart">
+  <view class="tuijian">热门参赛作品：</view>
+  <!-- 视频展示 -->
+  <view class="box" >
+    <view class="container" wx:for="{{hot}}" bindtap="goshipin" data-id="{{hot[index]._id}}">
+      <view class="img">
+        <image src="{{hot[index].home_photo}}"></image>
+      </view>
+      <view class="decoration">
+        <text>古法{{hot[index].active_name}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<navigator  open-type="switchTab">
+<button type="primary" bindtap="clink" data-id="{{ids}}">点击参赛</button>
+</navigator>

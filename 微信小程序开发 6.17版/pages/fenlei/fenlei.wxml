@@ -1,0 +1,66 @@
+<view class="a"> 分类专区</view>
+
+<view class="b"> 视频</view>
+<view class="menu"> 
+
+<navigator open-type="navigate" url="../video/video" class="menu-item">
+<image src="/icon/dianying.png"  mode="widthFix" class="menu-img">  </image>
+<view class="menu-name" >
+商业宣传片
+</view>
+</navigator> 
+
+
+<navigator open-type="navigate" url="../zufang/zufang" class="menu-item">
+<image src="/icon/kandianying.png" mode="widthFix" class="menu-img">  </image>
+<view class="menu-name">
+活动记录片
+</view>
+</navigator> 
+
+<navigator open-type="navigate" url="../zufang/zufang" class="menu-item">
+<image src="/icon/weidianying.png" mode="widthFix" class="menu-img">  </image>
+<view class="menu-name">
+微电影
+</view>
+</navigator> 
+</view>
+
+
+<view class="menu"> 
+
+<navigator open-type="navigate" url="../zufang/zufang" class="menu-item">
+<image src="/icon/douyin.png" mode="widthFix" class="menu-img">  </image>
+<view class="menu-name">
+抖音短视频
+</view>
+</navigator> 
+
+
+<navigator open-type="navigate" url="../zufang/zufang" class="menu-item">
+<image src="/icon/shejiaotubiao-02.png" mode="widthFix" class="menu-img">  </image>
+<view class="menu-name">
+朋友圈视频
+</view>
+</navigator> 
+
+
+<navigator open-type="navigate" url="../zufang/zufang" class="menu-item">
+<image src="/icon/gengduo.png" mode="widthFix" class="menu-img">  </image>
+<view class="menu-name" bindtap="buttonTap">
+更多
+</view>
+<modal title="暂无更多应用" hidden="{{modalHidden}}"  bindconfirm="modalConfirm" bindcancel="modalCandel">
+    </modal>
+</navigator> 
+</view>
+<view class="divLine"></view>
+
+<view class="b" style="display: flex;">  图片</view>
+<view>
+<image  class="pic" mode="widthFix" src="/icon/gengduo.png">  </image>
+<image  class="pic"  mode="widthFix"  src="/icon/gerenzhongxin.png">        </image>
+</view>
+
+<view class="b"> 文字简介</view> 
+<view style=" width: 100%; height: 100rpx; border: solid;">  </view>

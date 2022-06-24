@@ -1,0 +1,18 @@
+<View class="a"  > 乡村特色农产品介绍</View>
+<view >
+ <video style="width: 100%; height: 400rpx; margin: 1rpx;" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video>
+ </view>
+
+
+ <view style="  display: flex;" class="b">
+  <view bindtap="haveSave" style="display: flex;"  >
+    <image style="width:50rpx;" mode="widthFix" src="{{isClick?'https://s2.loli.net/2022/06/18/tTGR2XyVvDm8cge.png':'https://s2.loli.net/2022/06/18/tTGR2XyVvDm8cge.png'}}" ></image>
+    <text style="width: 200rpx;"  >{{isClick?'取消':'收藏        '}}</text>
+</view>
+
+<view bindtap="haveSave2"  class="c"  style="display: flex;" >
+    <image style="width:50rpx;" mode="widthFix"  src="{{isClick?'https://s2.loli.net/2022/06/22/zCEtMYVjQAorbLm.png':'https://s2.loli.net/2022/06/22/zCEtMYVjQAorbLm.png'}}"  ></image>
+    <text style="width: 200rpx;" >{{isClick?'取消':'点赞       '}}</text>
+</view>
+
+    </view>
